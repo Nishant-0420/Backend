@@ -2,6 +2,9 @@
  const express = require('express'); 
 //  intializing
 const app = express()
+const postRouter=require('./routers/postrouter');
+// middleware
+app.use('/post',postRouter)
 const port=5000
 
 app.get('/',(req,res)=>{ res.send('hello response on the way ') })
