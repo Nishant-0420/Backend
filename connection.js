@@ -9,4 +9,4 @@ mongoose.connect(url)  //thenc prompt is used to have then and catch block
 }).catch((err) => {
     console.log(err);
 });
-console.log('last line');
+module.exports=mongoose;
