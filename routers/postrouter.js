@@ -1,6 +1,7 @@
 const express= require('express')
 const router= express.Router()
-router.get('/add',(req,res)=>{
+router.post('/add',(req,res)=>{
+    console.log()
     res.send('post add operation')
 })
 router.get('/getall',(req,res)=>{
