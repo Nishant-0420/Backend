@@ -5,9 +5,10 @@ const mySchema= new Schema({
     user : String,
     description : String,
     image : String,
-    postedTime : date,
-    likes : {type : number , default:0},
-    shares : {type : number, default: 0},
+    postedTime : Date,
+    likes : {type : Number , default:0},
+    shares : {type : Number, default: 0},
 
 })
 module.exports= model('PostCollection',mySchema)
+
