@@ -4,7 +4,7 @@ const cors = require('cors');
 //  intializing
 const app = express()
 const postRouter=require('./routers/postrouter');
-// middleware
+// middleware  accept all request
 app.use(cors({
     origin: 'http://localhost:3000'
 }))
